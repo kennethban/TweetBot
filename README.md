@@ -33,18 +33,20 @@ The script requires authorization to your [Twitter](http://twitter.com) account.
 - grant access (read/write) to the application
 - obtain the following tokens
 
-	1. `Consumer key`
-    2. `Consumer secret`
-    3. `Access token`
-    4. `Access token secret`
+    `Consumer key`    
+	`Consumer secret`    
+	`Access token`    
+	`Access token secret`
+   
     
-- edit the `tweetbot.cfg` configuration file and fill in the 4 tokens
-    [twitter]
+- edit the `tweetbot.cfg` configuration file and fill in the 4 tokens under the `[twitter]` section
+```
+	[twitter]
     consumer_token = 
     consumer_secret = 
     access_token = 
     access_secret = 
-    
+    ```
     
     
 
