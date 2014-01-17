@@ -58,7 +58,23 @@ The `tweetbot.db` SQLite database can be edited using an SQLite editor e.g. [SQL
 - Set `count` field to 0
 
 ###6. Assign weightage for each topic
-Notes are classified by the the `topic` field in the `NOTES` table and a weight (0-9) can be assigned to each topic. 
+Notes are classified by the `topic` field in the `NOTES` table and a weight (1-9) can be assigned to each topic. The distribution of weights will determine the likelihood of a topic being chosen for posting of tweets. 
+- Edit the `[topic]` section in the `tweetbot.cfg` configuration file. For example:
+```
+[topic]
+topic1=1
+topic2=9
+```
+
+###7. Set up schedule
+The days of the week (mon,tue,wed,thu,fri,sat,sun) for posting of tweets can be specified.
+- Edit the `[schedule]` section in the `tweetbot.cfg` configuration file. For example:
+```
+[schedule]
+days=mon,wed,fri,sun
+```
+
+###8. Start daily execution of script under PythonAnywhere
     
 
 
