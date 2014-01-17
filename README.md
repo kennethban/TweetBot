@@ -26,6 +26,28 @@ Linking the Dropbox directory that contains the script allows you to edit the `t
 - share Dropbox account to PythonAnywere
 - go to Dropbox and choose folder to share (e.g. Dropbox/TweetBot)
 
+###4.Set up Twitter authorization
+The script requires authorization to your [Twitter](http://twitter.com) account.
+
+- register an [application](https://dev.twitter.com/apps)
+- grant access (read/write) to the application
+- obtain the following tokens
+
+	1. `Consumer key`
+    2. `Consumer secret`
+    3. `Access token`
+    4. `Access token secret`
+    
+- edit the `tweetbot.cfg` configuration file and fill in the 4 tokens
+>[twitter]
+>consumer_token = 
+>consumer_secret = 
+>access_token = 
+>access_secret = 
+    
+    
+    
+
 
 
 
