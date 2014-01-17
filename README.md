@@ -39,11 +39,11 @@ The script requires authorization to your [Twitter](http://twitter.com) account.
     4. `Access token secret`
     
 - edit the `tweetbot.cfg` configuration file and fill in the 4 tokens
->[twitter]
->consumer_token = 
->consumer_secret = 
->access_token = 
->access_secret = 
+    [twitter]
+    consumer_token = 
+    consumer_secret = 
+    access_token = 
+    access_secret = 
     
     
     
