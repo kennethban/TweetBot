@@ -8,8 +8,8 @@ The script requires a [Dropbox](http://www.dropbox.com) account for the files an
 - Create a directory in your DropBox account e.g. Dropbox/TweetBot
 - Copy all the files into the directory
   
-    `tweetbot.py`
-    `tweetbot.db`
+    `tweetbot.py`    
+    `tweetbot.db`    
     `tweetbot.cfg`
 
 ###2.Setup of PythonAnywere
@@ -23,15 +23,15 @@ PythonAnywhere provides many preinstalled Python modules, but does not include t
 ###3.Link Dropbox to PythonAnywhere account
 Linking the Dropbox directory that contains the script allows you to edit the `tweetbot.db` database and `tweetbot.cfg` configuration file locally. Changes will be automatically synced to PythonAnywhere which executes the script. For detailed steps, see [instructions](https://www.pythonanywhere.com/wiki/UsingDropbox) provided by PythonAnywhere.
 
-- share Dropbox account to PythonAnywere
-- go to Dropbox and choose folder to share (e.g. Dropbox/TweetBot)
+- Share Dropbox account to PythonAnywere
+- Go to Dropbox and choose folder to share (e.g. Dropbox/TweetBot)
 
 ###4.Set up Twitter authorization
-The script requires authorization to your [Twitter](http://twitter.com) account.
+The script requires authorization to access your [Twitter](http://twitter.com) account in order to post tweets.
 
-- register an [application](https://dev.twitter.com/apps)
-- grant access (read/write) to the application
-- obtain the following tokens
+- Register an [application](https://dev.twitter.com/apps)
+- Grant access (read/write) to the application
+- Obtain the following 4 tokens
 
     `Consumer key`    
 	`Consumer secret`    
@@ -41,13 +41,24 @@ The script requires authorization to your [Twitter](http://twitter.com) account.
     
 - edit the `tweetbot.cfg` configuration file and fill in the 4 tokens under the `[twitter]` section
 ```
-	[twitter]
-    consumer_token = 
-    consumer_secret = 
-    access_token = 
-    access_secret = 
-    ```
-    
+[twitter]
+consumer_token = 
+consumer_secret = 
+access_token = 
+access_secret = 
+```
+
+###5. Add notes to database
+The `tweetbot.db` SQLite database can be edited using an SQLite editor e.g. [SQLite Database Browser](http://http://sourceforge.net/projects/sqlitebrowser/).
+
+- Open the `NOTES` table in the database
+- Add notes/questions (up to 140 characters) in the `note` field
+- Add hyperlinks to additional material if needed in the `link` field
+- Add a topic name (e.g. diabetes) in the the `topic` field
+- Set `count` field to 0
+
+###6. Assigned weightage for posting of topics
+
     
 
 
