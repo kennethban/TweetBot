@@ -57,8 +57,8 @@ The `tweetbot.db` SQLite database can be edited using an SQLite editor e.g. [SQL
 - Add a topic name (e.g. diabetes) in the the `topic` field
 - Set `count` field to 0
 
-###6. Assigned weightage for posting of topics
-
+###6. Assign weightage for each topic
+Notes are classified by the the `topic` field in the `NOTES` table and a weight (0-9) can be assigned to each topic. 
     
 
 
