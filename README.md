@@ -62,7 +62,6 @@ Notes are classified by the `topic` field in the `NOTES` table and a weight (1-9
 - Edit the `[topic]` section in the `tweetbot.cfg` configuration file. For example:
 ```
 [topic]
-
 topic1=1    
 topic2=9
 ```
@@ -71,7 +70,7 @@ topic2=9
 The days of the week (mon,tue,wed,thu,fri,sat,sun) for posting of tweets can be specified.
 - Edit the `[schedule]` section in the `tweetbot.cfg` configuration file. For example:
 ```
-[schedule]    
+[schedule]   
 days=mon,wed,fri,sun
 ```
 
