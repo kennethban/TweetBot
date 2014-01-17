@@ -1,4 +1,4 @@
-## TweetBot - Automated Posting of Notes for Revision
+## TweetBot - Automated Posting of Notes/Questions
 This Python script automates the posting of tweets from a database of notes. It can be used to post notes/questions to aid in the revision of lessons organized by topic.
 
 ## Installation
